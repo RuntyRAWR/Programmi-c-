@@ -4,29 +4,30 @@
 #define mrighe 6
 using namespace std;
 
+
 int main()
 {
     // si dichiara e inizializza la matrice
     int m[mrighe][mcolonne];
 
-    // si stampa la matrice
+    cout << "Matrice prima dello scambio: " << endl << endl;
 
     // l'indice i scorre le righe
-    cout << "Matrice prima dello scambio: " << endl << endl;
     for (int i = 0; i < mrighe; i++)
     {
         // l'indice j scorre le colonne
         for (int j = 0; j < mcolonne; j++)
         {
             // inserimento numero randomico da 0 a 99
-            // si stampa la cella con riga i e colonna j di m
             m[i][j] = rand() % 100;
+            // si stampa la cella con riga i e colonna j di m
             cout << m[i][j] << " ";
         }
         // dopo ogni riga si va a capo
         cout << endl << endl;
     }
 
+    // si stampa la matrice dopo lo scambio
     cout << "Matrice dopo lo scambio: " << endl << endl;
 
     // si scorre l'indice i delle righe finchè <6, i avanza di 1
@@ -35,11 +36,11 @@ int main()
         // si scorre l'indice j delle colonne finchè j<6, j avanza di 2
         for (int j = 0; j < mcolonne; j = j + 2)
         {
-            // se j+1<6 fai "questo"
-            if (j + 1 < 6)
+            // se j+1<mcolonne fai "questo"
+            if (j + 1 < mcolonne)
             {
-                // temp serve per assegnare temporaneamente un valore
-                // metto il valore della posizione in temp
+                /* temp serve per assegnare temporaneamente un valore
+                metto il valore della posizione in temp */
                 int temp = m[i][j];
                 // sposto il valore della posizione 2 nella posizione 1
                 m[i][j] = m[i][j + 1];
