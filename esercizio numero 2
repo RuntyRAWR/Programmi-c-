@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // dichiarazione delle variabili di tipo float, ossia decimale
+    // variabili per i tre numeri
+    float x,y,z;
+    // variabile per il risultato
+    float risultato;
+    // stampo a schermo
+    cout << "Dammi il primo numero: ";
+    // richiesta del numero a schermo
+    cin >> x;
+    cout << "Dammi il secondo numero: ";
+    cin >> y;
+    cout << "Dammi il terzo numero ";
+    cin >> z;
+    risultato = x / y * z;
+    cout << x << " / " << y << " * " << z << " = " << risultato;
+
+    return 0;
+}
