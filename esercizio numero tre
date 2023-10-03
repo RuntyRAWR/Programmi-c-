@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x, y;
+    cout << "Dammi il valore di X: ";
+    cin >> x;
+    cout << "Dammi il valore di Y: ";
+    cin >> y;
+    x++;
+    y--;
+    int z,k; 
+    z = x % y;
+    k = x * y * z;
+    cout << "x: " << x << " y: " << y << " z: " << z << " k: " << k;
+    return 0;
+}
