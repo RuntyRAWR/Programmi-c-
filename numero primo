@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Numero;
+    bool Primo;
+    printf("Inserisci un numero per verificare che sia un numero primo: ");
+    cin>>Numero;
+    
+    if(Numero <= 2)
+    {
+        printf("Non è un numero primo");
+    }
+
+    else
+    {
+        Primo=true;
+        for(int i=2; i*i <= Numero; i++)
+        {
+            if (Numero % i == 0)
+            {
+                Primo = false;
+                break;
+            }
+        }
+        
+        if(Primo)
+        {
+            printf("Il numero è un numero primo: %d", Numero);
+        }
+        else
+        {
+            printf("Il numero non è un numero primo: %d", Numero);
+        }
+    }
+    return 0;
+}
