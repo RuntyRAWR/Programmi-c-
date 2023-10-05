@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float numero1, numero2, numero3;
+    char operatore;
+    cout << "Dammi il primo numero: ";
+    cin >> numero1;
+    cout << "Dammi il secondo numero: ";
+    cin >> numero2;
+    cout << "Dammi il terzo numero: ";
+    cin >> numero3;
+    cout << "Dammi l'operatore: ";
+    cin >> operatore;
+
+    float risultato;
+
+   if(operatore ==  '+')
+   {
+        risultato = numero1 + numero2 + numero3;
+        cout << numero1 << " " << operatore << " " << numero2 << " " << operatore << " " << numero3 << " = " << risultato;
+   }
+   else if(operatore == '-')
+   {
+        risultato = numero1 - numero2 - numero3;
+        cout << numero1 << " " << operatore << " " << numero2 << " " << operatore << " " << numero3 << " = " << risultato;
+   }
+   else if(operatore == '*')
+   {
+        risultato = numero1 * numero2 * numero3;
+        cout << numero1 << " " << operatore << " " << numero2 << " " << operatore << " " << numero3 << " = " << risultato;
+   }
+   else if(operatore == '/')
+   {
+        risultato = numero1 / numero2 / numero3;
+        cout << numero1 << " " << operatore << " " << numero2 << " " << operatore << " " << numero3 << " = " << risultato;
+   }
+   else if(operatore != '+','-','*','/')
+   {
+        cout << "Operatore non valido: ";
+        risultato = -1;
+        cout << risultato;
+   }
+   
+   return 0;
+}
