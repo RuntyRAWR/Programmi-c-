@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int lato1, lato2, lato3;
+
+    cout << "Dammi tre valori e ti diro' che tipo di triangolo e', calcolero' il perimetro e l'area!" << endl << endl;
+
+    cout << "Dammi il valore del primo lato: ";
+    cin >> lato1;
+    cout << "Dammi il valore del secondo lato: ";
+    cin >> lato2;
+    cout << "Dammi il valore del terzo lato: ";
+    cin >> lato3;
+
+    if (lato1==lato2)
+    {
+        if(lato2==lato3)
+        {
+                cout << "Il triangolo e' equilatero" << endl;
+                exit (0);
+        }
+    }
+    else 
+	{
+	
+	if (lato2!=lato3)
+	
+        {
+            cout << "Il triangolo e' scaleno" << endl;
+            exit (0);
+        }
+    else
+        {
+            cout << "Il triangolo e' isoscele" << endl;
+            exit (0);
+        }
+    }
+
+
+
+
+
+    /*
+    switch(lato1)
+    {
+    case lato1 == lato2, lato2==lato3, lato1 == lato3:
+        cout << "Il triangolo ï¿½ equilatero" << endl;
+        break;
+    case lato1 != lato2, lato2 == lato3, lato1 == lato3;
+        cout << "Il triangolo ï¿½ isoscele";
+
+        */
+
+
+    return 0;
+}
