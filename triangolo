@@ -14,44 +14,34 @@ int main()
     cout << "Dammi il valore del terzo lato: ";
     cin >> lato3;
 
-    if (lato1==lato2)
+    if (lato1 == lato2)
     {
-        if(lato2==lato3)
+        if(lato2 == lato3)
         {
                 cout << "Il triangolo e' equilatero" << endl;
-                exit (0);
         }
     }
-    else 
+    else
 	{
-	
-	if (lato2!=lato3)
-	
+
+	if (lato1 == lato3)
+
         {
-            cout << "Il triangolo e' scaleno" << endl;
-            exit (0);
+            cout << "Il triangolo e' isoscele" << endl;
         }
     else
         {
-            cout << "Il triangolo e' isoscele" << endl;
-            exit (0);
+            cout << "Il triangolo e' scaleno" << endl;
         }
     }
 
+    // int perimetro;
+    float area;
 
-
-
-
-    /*
-    switch(lato1)
-    {
-    case lato1 == lato2, lato2==lato3, lato1 == lato3:
-        cout << "Il triangolo ï¿½ equilatero" << endl;
-        break;
-    case lato1 != lato2, lato2 == lato3, lato1 == lato3;
-        cout << "Il triangolo ï¿½ isoscele";
-
-        */
+    // perimetro = lato1 + lato2 + lato3;
+    // cout << "Il perimetro del triangolo e': " << perimetro << endl;
+    area = lato1 * lato2 / 2;
+    cout << "L'area del triangolo e': " << area << endl;
 
 
     return 0;
